@@ -1,0 +1,69 @@
+*{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: black;
+    font-weight: 300;
+}
+
+html, body{
+height: 100%;
+width: 100%;
+padding: 0.5em;
+background-color: rgb(255, 255, 255);
+}
+/* NAVBAR */
+.navigationBar{
+display: flex;
+width: 100%;
+height: 45px;
+justify-content: space-between;
+}
+
+/* NAVBAR */
+
+/*  USER  */
+.userContainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    width: 100%;
+}
+.userCard{
+    display: flex;
+justify-content: center;
+    align-items: center;
+ border: none;
+    gap: 1em;
+    background-color: rgb(217, 222, 226);
+    padding: 1em;
+    border-radius: 1em;
+}
+.userLeft{
+    display: flex;
+    flex-direction: column;
+gap: 1em;
+}
+.userName{
+font-size: 32px;
+text-align: center;
+}
+.userEmail{
+    text-align: center;
+
+}
+.userButton{
+    background: rgb(54, 54, 54);
+    color:rgb(217, 222, 226);
+    border-radius: 0.5em;
+    width: 100px;
+    padding: 0.1em;
+    cursor: pointer;
+}
+.userAvatar{
+border-radius: 50%;
+}
+
+/*  USER  */
