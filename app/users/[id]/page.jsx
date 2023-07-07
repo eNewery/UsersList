@@ -9,10 +9,17 @@ async function getUser(id){
 
 async function UsersPage({params}) {
 const user = await getUser(params.id)
+console.log(user)
   return (
-    <div>
-      <h3>{user.first_name} {user.last_name}</h3>
-      <div><img className='roundedAvatar' src={user.avatar} alt="" /></div>
+    <div className='userDetailContainer'>
+      <div className='userDetail'>
+      <div>
+<h3 className='userId'>User ID: {user.id}</h3>
+      <h2 className='userName'>{user.first_name} {user.last_name}</h2>
+      </div>
+      <div><img className='userAvatar' src={user.avatar} alt="" /></div>
+   <h3>Contact: {user.email}</h3>
+      </div>
     </div>
   )
 }

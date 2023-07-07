@@ -10,7 +10,7 @@ async function fetchUsers() {
 async function ServicesPage() {
   const users = await fetchUsers()
   return (
-    <div><h1>User List</h1>
+    <div><h1 className='userList'>User List</h1>
     <Users users={users}/></div>
   )
 }

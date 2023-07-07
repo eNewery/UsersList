@@ -15,7 +15,7 @@ const router = useRouter();
       <li className='userCard' key={user.id}><div className='userLeft'>
         <div>
         <h5 className='userName'>{user.first_name} {user.last_name}</h5>
-        <p className='userEmail'>{user.email}</p>
+
         </div>
         <button className='userButton' onClick={() => {
         router.push(`/users/${user.id}`)
