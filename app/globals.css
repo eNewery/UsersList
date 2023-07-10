@@ -105,10 +105,12 @@ border-radius: 50%;
     height: 50%;
     box-shadow: 0.3em 0.3em 0.5em 0 black;
     animation: appear 1s both;
+    opacity: 0;
 }
 @keyframes appear {
     0%{transform: scale(0);}
-    100%{transform: scale(1);}
+    50%{opacity: 0;}
+    100%{transform: scale(1); opacity: 1;}
 }
 .userDetailContainer div{
     display: flex;
