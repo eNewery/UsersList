@@ -10,10 +10,12 @@ async function fetchUsers() {
 async function ServicesPage() {
   const users = await fetchUsers()
   return (
-    <div>
-      <button>Create User</button>
+    <div className='userListContainer'>
+      <button className='userCreateBtn'>Create User</button>
+      <div>
       <h1 className='userList'>User List</h1>
     <Users users={users}/></div>
+      </div>
   )
 }
 
