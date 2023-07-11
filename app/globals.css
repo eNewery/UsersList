@@ -52,6 +52,8 @@ background-color: rgb(52, 68, 82);
 gap: 1em;
     height: 90%;
     align-items: center;
+    animation: appear 1s both;
+opacity: 0;
 }
 .userList{
     text-align: center;
@@ -97,7 +99,6 @@ text-align: center;
 }
 .userButton{
     background-color: rgb(52, 68, 82);
-
     color:rgb(217, 222, 226);
     border-radius: 0.5em;
     border: none;
@@ -127,10 +128,23 @@ border-radius: 50%;
     animation: appear 1s both;
     opacity: 0;
 }
+.userCreateContainer{
+    animation: appear 1s both;
+
+}
 @keyframes appear {
     0%{transform: scale(0);}
     50%{opacity: 0;}
     100%{transform: scale(1); opacity: 1;}
+}
+.dissapear{
+    opacity: 1;
+    animation: disappear 1s both;
+}
+@keyframes disappear {
+    0%{transform: scale(1);}
+    50%{opacity: 0;}
+    100%{transform: scale(0); opacity: 0;}
 }
 .userDetailContainer div{
     display: flex;
@@ -139,6 +153,34 @@ border-radius: 50%;
     align-items: center;
     
 }
+
+/* CREATE USER */
+.userCreateContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    gap: 1em;
+    opacity: 0;
+}
+.userCreateLogin{
+    color: blue;
+    display: inline;
+}
+.createUserForm{
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+}
+.createUserForm input{
+    padding: 1em 4em 1em 0.5em;
+    border: none;
+    box-shadow: 0.5em 0.5em 1em 0.1em rgb(52, 68, 82);
+}
+/* CREATE USER */
+
+
 /*  USER  */
 
 /* FOOTER */
