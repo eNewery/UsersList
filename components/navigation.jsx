@@ -11,7 +11,7 @@ function navigation() {
         <Link href="/about">About</Link>
       </li>
       <li>
-        <Link href="/userList">User List</Link>
+        <Link href="/userList">Create User</Link>
       </li>
     </ul>
   )

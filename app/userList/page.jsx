@@ -20,7 +20,7 @@ async function ServicesPage() {
     <div className='userListContainer'>
      <CreateUser disappear={dissapearTransition}/>
       <div>
-      <h1 className='userList'>User List</h1>
+      <h1 className='userList'>Recent Users Created</h1>
     <Users users={users}/></div>
       </div>
   )

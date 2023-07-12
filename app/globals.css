@@ -13,10 +13,11 @@ height: 100%;
 width: 100%;
 background-color: rgb(255, 255, 255);
 }
-body{
+.body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    height: 100%;
 }
 main{
     display: flex;
@@ -40,7 +41,8 @@ background-color: rgb(52, 68, 82);
 
 /*  USER  */
 .userContainer{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     flex-wrap: wrap;
     gap: 1em;
     width: 100%;
@@ -50,7 +52,6 @@ background-color: rgb(52, 68, 82);
     display: flex;
     flex-direction: column;
 gap: 1em;
-    height: 90%;
     align-items: center;
     animation: appear 1s both;
 opacity: 0;
@@ -95,7 +96,7 @@ text-align: center;
     color: white;
     font-family: sans-serif;
     cursor: pointer;
-    margin-top:1em;
+
 }
 .userButton{
     background-color: rgb(52, 68, 82);
@@ -165,8 +166,13 @@ border-radius: 50%;
     opacity: 0;
 }
 .userCreateLogin{
+    cursor: pointer;
     color: blue;
     display: inline;
+    border: none;
+    background: none;
+    font-size: 16px;
+    font-family: sans-serif;
 }
 .createUserForm{
     display: flex;
@@ -177,6 +183,7 @@ border-radius: 50%;
     padding: 1em 4em 1em 0.5em;
     border: none;
     box-shadow: 0.5em 0.5em 1em 0.1em rgb(52, 68, 82);
+    outline-style: none;
 }
 /* CREATE USER */
 
@@ -195,3 +202,23 @@ border-radius: 50%;
 color:white;
 }
 /* FOOTER */
+
+
+/* MEDIA QUERIES */
+
+@media (max-width:768px) {
+
+    .userCard{
+    }
+    .userAvatar{
+        width: 64px;
+    }
+    .userName{
+        font-size: 24px;
+    }
+    .userContainer{
+        grid-template-columns: 1fr;
+    }
+}
+
+/* MEDIA QUERIES */
