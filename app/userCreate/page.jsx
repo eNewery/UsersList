@@ -19,6 +19,7 @@ const user = {
   repeatPasswordOb: repeatPassword.value
 }
 console.log(user)
+router.push("/userCreated")
     }
   return (
     <div className='userCreateContainer'>
@@ -26,16 +27,16 @@ console.log(user)
         <h1>Create User</h1>
         <p>Already have an account? <button onClick={() => router.push("/userLogin")} className='userCreateLogin'>Log-in</button></p>
         </div>
-        <div className="createUserForm">
+        <form className="createUserForm">
             <div>
-        <input className='firstName' type="text" placeholder='First Name'/>
-        <input className='lastName' type="text" placeholder='Last Name'/>
+        <input className='firstName' required type="text" placeholder='First Name'/>
+        <input className='lastName' required type="text" placeholder='Last Name'/>
             </div>
-        <input className='email' type="text" placeholder='E-Mail'/>
-        <input className='username' type="text" placeholder='Username'/>
-        <input className='password' type="password" placeholder='Password'/>
-        <input className='repeatPassword' type="password" placeholder='Repeat Password'/>
-        </div>
+        <input className='email' required type="text" placeholder='E-Mail'/>
+        <input className='username' required type="text" placeholder='Username'/>
+        <input className='password' required type="password" placeholder='Password'/>
+        <input className='repeatPassword' required type="password" placeholder='Repeat Password'/>
+        </form>
         <button onClick={createUser} className='userCreateBtn'>Create User</button>
     </div>
   )
