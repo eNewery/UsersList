@@ -48,6 +48,7 @@ background-color: rgb(52, 68, 82);
     width: 100%;
     padding: 1em;
 }
+
 .userListContainer{
     display: flex;
     flex-direction: column;
@@ -55,6 +56,12 @@ gap: 1em;
     align-items: center;
     animation: appear 1s both;
 opacity: 0;
+}
+.createUserTitle{
+    background-color: rgb(52, 68, 82);
+    color: white;
+    padding: 0.5em;
+    border-radius: 0.2em;
 }
 .userList{
     text-align: center;
@@ -176,13 +183,13 @@ border-radius: 50%;
 }
 .createUserForm{
     display: flex;
-    gap: 1em;
+    gap: 0.3em;
     flex-direction: column;
 }
 .createUserForm input{
     padding: 1em 4em 1em 0.5em;
     border: none;
-    box-shadow: 0.5em 0.5em 1em 0.1em rgb(52, 68, 82);
+    box-shadow: 0.3em 0.3em 0.5em 0.1em rgb(52, 68, 82);
     outline-style: none;
 }
 /* CREATE USER */
