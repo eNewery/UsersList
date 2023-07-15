@@ -3,7 +3,7 @@ function AboutPage(){
     return(
 
         <main>
-<h1>About Page</h1>
+<h1>This is a Users Example Page.</h1>
         </main>
     )
 }
